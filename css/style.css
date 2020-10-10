@@ -97,3 +97,88 @@ body{
 .social-icons .icon:hover{
     background-color: rgba(255, 82, 192, 0.7);
 }
+/*--Responsive--*/
+@media only screen and (min-height: 801px) {
+    .container {
+        background-size: contain; 
+    }  
+}
+@media only screen and (min-width: 1600px) {
+    main {
+        padding: 0 4%;
+    }
+}
+/* Switch to Column Layout (Tablet Portrait Modes)*/
+@media only screen and (max-width:1100px) {
+    .container {
+        height: unset;
+        background-image:url("../images/bg-mobile.svg");
+        background-size: cover;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header {
+        align-self: flex-start;
+    }
+    .main {
+        flex-direction: column;
+        margin-left: unset;
+        align-items: center;
+    }
+    .main-img {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+    .main-img img {
+        width: 90%;
+    }
+    .main-text {
+        text-align: center;
+        margin-left: unset;
+        width: 80%;
+        margin-top: 3rem;
+    }
+    .social-icons {
+        margin-right: unset;
+        margin-top: 3rem;
+    }
+}
+/* Resize for Mobile */
+@media only screen and (max-width:720px) {
+    .container {
+        padding: 3rem 2rem;
+        height: 100vh;
+        background-size: contain;
+    }
+    .header {
+        margin-left: 1.25rem;
+    }
+    .header img {
+        height: 36px;
+    }
+    .ain {
+        margin-top: 55px;
+        padding: unset;
+    }
+    .main-text {
+        width: 100%;
+        padding: 4rem .5rem;
+    }
+    h1 {
+        font-size: 26px;
+        line-height: 1.6;
+    }
+    .button {
+        font-size: 1.4rem;
+        padding: 1.5rem 9rem;
+    }
+    .social-icons {
+        margin-top: unset;
+        padding-top: 4rem;
+        padding-bottom: 5rem;
+    }
+    .icon:not(:last-of-type) {
+        margin-right: 1.2rem;
+    }
+}
