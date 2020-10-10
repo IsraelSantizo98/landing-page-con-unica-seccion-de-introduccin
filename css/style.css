@@ -12,11 +12,22 @@ html{
 }
 h1{
     font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 4rem;
+    max-width: 60rem;
 }
 p{
-
+    max-width: 54rem;
+    margin: 2rem 0;
+    line-height: 1.2;
+}
+.button{
+    color: #000;
+    background-color: #fff;
+    padding: 1rem 3rem;
+    margin-top: 4rem;
+    border-radius: 5rem;
+    text-align: center;
 }
 body{
     background-color: var(--Violet);
@@ -32,23 +43,35 @@ body a{
     text-decoration: none;
     color: #d1d1d1;
 }
-header, main, footer{
-    
-}
 .container{
     display: flex;
     justify-content: center;
+    align-content: space-around;
     flex-wrap: wrap;
-    flex-direction: column;
     width: 90vw;
     height: 100vh;
-    margin: auto;
+    margin: 0 auto;
 }
 .container .header{
-    
+    flex-grow: 1;
+
+}
+.container .header img{
+   width: 20rem;
 }
 .container .main{
+    flex: 1 1 auto;
     display: flex;
+}
+.container .footer{
+    flex-grow: 1;
+}
+.main-img{
+    flex: 3 1 auto;
+}
+.main-text{
+    flex: 1 1 auto;
+    margin: auto;
 }
 .social-icons{
     display: flex;
